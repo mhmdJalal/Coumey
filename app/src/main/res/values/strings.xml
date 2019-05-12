@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Courrin</string>
+    <string name="about">
+        "Courrin merupakan sebuah aplikasi yang dikembangkan untuk membantu saat proses prakerin. Fitur yang terdapat dalam aplikasi ini yaitu, Coumey, Jurnal Mapel, Jurnal Kegiatan dan Jadwal Video Conference."
+        \n\n
+        "Teknologi adalah solusi."
+    </string>
+    <string name="try_a_more_general_keyword">Try a more general \n keyword</string>
+    <string name="title_send_email">Isi Form dibawah ini untuk mengirim \n Saran atau Masukan terhadap aplikasi ini</string>
+    <string-array name="keterangan">
+        <item>Belum Selesai</item>
+        <item>Selesai</item>
+    </string-array>
+    <string-array name="mapelVidcon">
+        <item>Produktif APK</item>
+        <item>Produktif MMD</item>
+        <item>Produktif PMN</item>
+        <item>Produktif RPL</item>
+        <item>Produktif TKJ</item>
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Inggris</item>
+        <item>Bahasa Sunda</item>
+        <item>Matematika</item>
+        <item>Pendidikan Agama</item>
+        <item>PPKN</item>
+        <item>Prakarya dan Kewirausahaan</item>
+        <item>PJOK</item>
+        <item>Sejarah Indonesia</item>
+    </string-array>
+    <string-array name="bulan">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="minggu">
+        <item>Minggu 1</item>
+        <item>Minggu 2</item>
+        <item>Minggu 3</item>
+        <item>Minggu 4</item>
+        <item>Minggu 5</item>
+        <item>Minggu 6</item>
+        <item>Minggu 7</item>
+        <item>Minggu 8</item>
+        <item>Minggu 9</item>
+        <item>Minggu 10</item>
+        <item>Minggu 11</item>
+        <item>Minggu 12</item>
+        <item>Minggu 13</item>
+        <item>Minggu 14</item>
+        <item>Minggu 15</item>
+        <item>Minggu 16</item>
+        <item>Minggu 17</item>
+        <item>Minggu 18</item>
+    </string-array>
+    <string-array name="vicon">
+        <item>viconinggris1</item>
+        <item>viconinggris2</item>
+        <item>viconinggris3</item>
+        <item>viconmtk1</item>
+        <item>viconmtk2</item>
+        <item>viconmtk3</item>
+        <item>viconmtk4</item>
+        <item>viconmtk5</item>
+        <item>viconmtk6</item>
+    </string-array>
+</resources>

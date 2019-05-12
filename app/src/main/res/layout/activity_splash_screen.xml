@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/idea2" />
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:LoadingDots_auto_play="true"
+
+        app:LoadingDots_dots_color="@color/colorPrimaryDark"
+        app:LoadingDots_dots_count="5"
+        app:LoadingDots_dots_size="8dp"
+        app:LoadingDots_dots_space="5dp"
+
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="100"
+
+        app:LoadingDots_jump_duration="300"
+        app:LoadingDots_jump_height="8dp"/>
+
+
+</RelativeLayout>

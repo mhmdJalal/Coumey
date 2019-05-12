@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".fitur.vidcon.AddVidconActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <Spinner
+            android:id="@+id/mapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/mapelVidcon"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <me.zhanghai.android.materialedittext.MaterialTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <me.zhanghai.android.materialedittext.MaterialEditText
+                android:id="@+id/materi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Materi"
+                android:textSize="15sp"
+                android:drawablePadding="15dp"
+                android:inputType="textPersonName"/>
+
+        </me.zhanghai.android.materialedittext.MaterialTextInputLayout>
+
+        <me.zhanghai.android.materialedittext.MaterialTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <me.zhanghai.android.materialedittext.MaterialEditText
+                android:id="@+id/jam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam"
+                android:textSize="15sp"
+                android:drawablePadding="15dp"
+                android:inputType="time"/>
+
+        </me.zhanghai.android.materialedittext.MaterialTextInputLayout>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="dd/MM/yyyy"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <com.dd.processbutton.FlatButton
+                android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Pilih Tanggal"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                custom:pb_colorNormal="@android:color/holo_blue_light"
+                custom:pb_colorPressed="@android:color/holo_blue_dark" />
+
+            <com.dd.processbutton.FlatButton
+                android:id="@+id/btnSimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Simpan"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                custom:pb_colorNormal="@android:color/holo_blue_light"
+                custom:pb_colorPressed="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

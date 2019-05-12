@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nguliktime.coumey">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/idea2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/idea2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.APP_CALCULATOR" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fitur.coumey.DaftarPengeluaran"
+            android:parentActivityName=".fitur.coumey.CoumeyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.coumey.CoumeyActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.coumey.DetailPengeluaran"
+            android:parentActivityName=".fitur.coumey.DaftarPengeluaran">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.coumey.DaftarPengeluaran" />
+        </activity>
+        <activity
+            android:name=".fitur.coumey.AddCoumeyActivity"
+            android:parentActivityName=".fitur.coumey.CoumeyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.coumey.CoumeyActivity" />
+        </activity>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalMapel.JurnalActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.coumey.CoumeyActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FilterActivity"
+            android:parentActivityName=".fitur.coumey.CoumeyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.coumey.CoumeyActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.vidcon.VidconActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalMapel.AddJurnalActivity"
+            android:parentActivityName=".fitur.jurnalMapel.JurnalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalMapel.JurnalActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.vidcon.AddVidconActivity"
+            android:parentActivityName=".fitur.vidcon.VidconActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.vidcon.VidconActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.vidcon.DetailVidconActivity"
+            android:parentActivityName=".fitur.vidcon.VidconActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.vidcon.VidconActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalMapel.DaftarJurnalActivity"
+            android:parentActivityName=".fitur.jurnalMapel.JurnalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalMapel.JurnalActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalMapel.DetailJurnalActivity"
+            android:parentActivityName=".fitur.jurnalMapel.DaftarJurnalActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalMapel.DaftarJurnalActivity" />
+        </activity>
+        <activity
+            android:name=".DaftarFilterActivity"
+            android:parentActivityName=".FilterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FilterActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalKegiatan.JurnalKegiatan"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalKegiatan.ActivityAddKegiatan"
+            android:parentActivityName=".fitur.jurnalKegiatan.JurnalKegiatan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalKegiatan.JurnalKegiatan" />
+        </activity>
+        <activity
+            android:name=".fitur.jurnalKegiatan.ActivityDaftarKegiatan"
+            android:parentActivityName=".fitur.jurnalKegiatan.JurnalKegiatan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalKegiatan.JurnalKegiatan" />
+        </activity>
+        <activity android:name=".fitur.jurnalKegiatan.DetailKegiatanActivity"
+            android:parentActivityName=".fitur.jurnalKegiatan.ActivityDaftarKegiatan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fitur.jurnalKegiatan.ActivityDaftarKegiatan" />
+        </activity>
+        <activity android:name=".SaranDanMasukan"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
